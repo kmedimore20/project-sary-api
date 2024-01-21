@@ -15,12 +15,6 @@ public class MessageController {
     @Autowired
     private SensorRepo sensorRepo;
 
-    @GetMapping("/Hello")
-    public ResponseEntity helloMessage(){
-
-        return new ResponseEntity<>("Hello karlo", HttpStatus.OK);
-    }
-
     @PostMapping("/send")
     public ResponseEntity message(@RequestBody String message){
 
